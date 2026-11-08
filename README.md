@@ -110,7 +110,8 @@ The replacement is drawn from a temperature-scaled softmax over the surviving ca
 
 $$\mathcal{L}_{\text{RTD}}(x;\theta_D) = -\mathbb{E}\Big[\sum_{t=1}^{n} y_t \log D(x^c,t) + (1-y_t)\log\big(1-D(x^c,t)\big)\Big]$$
 
-**Linear generator–discriminator schedule.** $\mathcal{L} = \mathcal{L}_{\text{MLM}} + \lambda(t)\,\mathcal{L}_{\text{RTD}}$. λ = 0 for epochs 1–2, while only the generator trains. It rises linearly to λ<sub>max</sub> = 50 during epoch 3 and stays fixed for epochs 4–6.
+**Linear generator–discriminator schedule.**
+$\mathcal{L} = \mathcal{L}_{\text{MLM}} + \lambda(t)\,\mathcal{L}_{\text{RTD}}$. λ = 0 for epochs 1–2, while only the generator trains. It rises linearly to λ<sub>max</sub> = 50 during epoch 3 and stays fixed for epochs 4–6.
 
 ## Experimental Setup
 
