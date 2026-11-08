@@ -1,0 +1,33 @@
+{
+  "description": "Models published to the Hugging Face Hub. Each entry exports the best (dev RTD F1) discriminator of a pre-training run as a RemBertModel.",
+  "models": [
+    {
+      "name": "main",
+      "repo_id": "nhatkhangdtp/CKTN-ELECTRA",
+      "config": "configs/pretrain/main.json",
+      "checkpoint": "runs/pretrain/main/checkpoint/discriminator/discriminator_best.pt",
+      "model_card": "release/model_cards/CKTN-ELECTRA.md"
+    },
+    {
+      "name": "no_script_aware",
+      "repo_id": "nhatkhangdtp/CKTN-ELECTRA-no-script-aware",
+      "config": "configs/pretrain/no_script_aware.json",
+      "checkpoint": "runs/pretrain/no_script_aware/checkpoint/discriminator/discriminator_best.pt",
+      "model_card": "release/model_cards/CKTN-ELECTRA-no-script-aware.md"
+    },
+    {
+      "name": "no_linear_lambda",
+      "repo_id": "nhatkhangdtp/CKTN-ELECTRA-no-linear-lambda",
+      "config": "configs/pretrain/no_linear_lambda.json",
+      "checkpoint": "runs/pretrain/no_linear_lambda/checkpoint/discriminator/discriminator_best.pt",
+      "model_card": "release/model_cards/CKTN-ELECTRA-no-linear-lambda.md"
+    },
+    {
+      "name": "no_vocab_aug",
+      "repo_id": "nhatkhangdtp/CKTN-ELECTRA-no-vocab-aug",
+      "config": "configs/pretrain/no_vocab_aug.json",
+      "checkpoint": "runs/pretrain/no_vocab_aug/checkpoint/discriminator/discriminator_best.pt",
+      "model_card": "release/model_cards/CKTN-ELECTRA-no-vocab-aug.md"
+    }
+  ]
+}

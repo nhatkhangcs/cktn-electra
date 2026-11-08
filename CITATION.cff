@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this code or the CKTN-ELECTRA models, please cite the paper below."
+title: "CKTN-ELECTRA"
+repository-code: "https://github.com/TracDucAnh/CKTN-ELECTRA"
+license: Apache-2.0
+authors:
+  - family-names: Dinh
+    given-names: Anh Trac Duc
+  - family-names: Vo
+    given-names: Khang Nhat Hoang
+  - family-names: Doan
+    given-names: Vinh Cong
+  - family-names: Ta
+    given-names: Tai Tien
+  - family-names: Lam
+    given-names: Khoa Duc Anh
+preferred-citation:
+  type: article
+  title: "Echoes Across Vietnam's Highlands, Delta, and Coast: A Multilingual Corpus for Cham, Khmer, and Tay-Nung"
+  authors:
+    - family-names: Dinh
+      given-names: Anh Trac Duc
+    - family-names: Vo
+      given-names: Khang Nhat Hoang
+    - family-names: Doan
+      given-names: Vinh Cong
+    - family-names: Ta
+      given-names: Tai Tien
+    - family-names: Lam
+      given-names: Khoa Duc Anh
+  year: 2026
+  journal: "arXiv preprint arXiv:2607.08362"
+  doi: "10.48550/arXiv.2607.08362"
+  url: "https://arxiv.org/abs/2607.08362"

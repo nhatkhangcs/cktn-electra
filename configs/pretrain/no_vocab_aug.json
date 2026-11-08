@@ -1,0 +1,26 @@
+{
+  "description": "Ablation: discriminator, tokenizer and shared embeddings start from the original google/rembert (no CKTN vocabulary augmentation).",
+  "variant": "no_vocab_aug",
+  "base_model": "google/rembert",
+  "generator_depth_divisor": 4,
+  "total_epochs": 6,
+  "mask_rate": 0.15,
+  "seq_len": 512,
+  "batch_size": 8,
+  "lr": 2e-05,
+  "warmup_ratio": 0.06,
+  "weight_decay": 0.01,
+  "grad_norm": 1.0,
+  "seed": 42,
+  "lambda_max": 50.0,
+  "lambda_schedule": "linear",
+  "lambda_zero_until_epoch": 2,
+  "lambda_ramp_until_epoch": 3,
+  "sampler": {
+    "top_k": 64,
+    "temperature": 1.25,
+    "rho_min": 0.15,
+    "rho_max": 0.95,
+    "script_aware": true
+  }
+}

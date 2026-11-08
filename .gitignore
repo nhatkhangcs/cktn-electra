@@ -1,49 +1,39 @@
-# --- Python & Cache ---
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-.Python
-env/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# Environments and secrets
 venv/
+.venv/
+env/
 .env
 
-# --- Machine Learning / NLP Specific ---
-# Loại bỏ các file weights và checkpoint
+# Data (download separately, see README)
+corpus/
+
+# Training outputs, caches and exported models
+runs/
 *.pt
 *.pth
 *.bin
 *.ckpt
 *.pkl
-cache/
-checkpoint/
-generator/
-discriminator/
-best_model/
-quarter_generator_variant/downstream/
+*.safetensors
 
-# Loại bỏ dữ liệu thô và index tìm kiếm
-data/
-datasets/
-drive_folder_*/
-*.index
-*.sqlite
+# Outputs of the pre-refactor layout (kept locally, not versioned)
+quarter_*_variant/
+half_*_variant/
+raw_raviant/
+tools/
 
-# --- OS & IDE ---
+# OS / IDE
 .DS_Store
 .vscode/
 .idea/
 .ipynb_checkpoints/
-
-# --- Logs & Archives ---
 *.log
-*.zip
-*.tar.gz
-*.7z
-
-#-- Datasets ---
-corpus/
-quarter_generator_variant/cpt_baselines
-quarter_and_no_linear_lambda_variant/downstream
-quarter_no_script_aware_variant/downstream
-quarter_no_vocab_aug_variant/downstream
